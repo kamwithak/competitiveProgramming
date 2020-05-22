@@ -33,13 +33,11 @@ class maximumSubArraySum:
 	def linearSolution(self):
 		bestSum = 0 ; curSum = 0
 		for a in range(len(self.arr)):
-			#print("curSum=max(" +str(self.arr[a])+", "+str(curSum+self.arr[a])+")")
 			curSum = max(self.arr[a], curSum+self.arr[a])
-			#print("bestSum=max(" +str(curSum)+", "+str(bestSum)+")")
 			bestSum = max(curSum, bestSum)
 		print(self.arr)
 		print("best sum: " + str(bestSum))
 
 if __name__ == '__main__':
 	obj = maximumSubArraySum([-1,2,4,-3,5,2,-5,2])
-	obj.linearSolution()
+	obj.bubbleSort()

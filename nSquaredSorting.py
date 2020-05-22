@@ -31,9 +31,7 @@ def baseToPower(a, b):
 		else: return a * tmp * tmp
 
 #print(baseToPower(9,2))
-'''
-OK I think I'd like to actually meet you. Come to the library tomorrow~! 
-'''
+
 def findRepeatedElementsInList(myList):							# O(n^2)
 	repeatedElements = []
 	steps = 0
@@ -114,6 +112,17 @@ def empty(stack):
 
 def peak(stack):
     return (stack[len(stack)-1])
+	
+def matched(str):
+    count = 0
+    for i in str:
+        if i == "(":
+            count += 1
+        elif i == ")":
+            count -= 1
+        if count < 0:
+            return False
+    return count == 0
 
 def balancedOrNot(myStr): 
     stack = [] 
