@@ -101,11 +101,7 @@ def insertionSort(arr):
 	print(steps)
 	return arr
 
-
-# Python3 code to Check for  
-# balanced parentheses in an expression 
 _map = {"]" : "[", "}" : "{", ")" : "("}
-# Function to check parentheses 
 
 def empty(stack):
     return (len(stack) == 0)
