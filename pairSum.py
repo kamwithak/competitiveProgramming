@@ -6,14 +6,31 @@ class PairSum:
     def __init__(self, arr, k):
         self.arr = arr
         self.k = k
-
-    def solution(self):
+    '''
+    n^2 - algo 
+    '''
+    def solutionQuadraticTime(self):
         for i in range(len(self.arr)-1):
             for j in range(i+1, len(self.arr)):
                 if (self.arr[i] + self.arr[j] == self.k):
                     return [i, j]
         return False
     
+    '''
+    n - algo
+    '''
+    def solutionLinearTime(self):
+        _dict = {}
+        for i in range(len(self.arr)):
+            comp = self.k - self.arr[i]
+            print(comp)
+            print(_dict)
+            if (comp in _dict):
+                return [_dict[comp], i]
+            _dict[self.arr[i]] = i
+        return False
+        
 if __name__ == "__main__":
-    obj = PairSum([2, 7, 11, 15], 7+15)
-    print(obj.solution())
+    obj = PairSum([2, 7, 11, 15], 14+8)
+    #print(obj.solutionQuadraticTime())
+    print(obj.solutionLinearTime())
