@@ -23,11 +23,10 @@ class PairSum:
         _dict = {}
         for i in range(len(self.arr)):
             comp = self.k - self.arr[i]
-            print(comp)
-            print(_dict)
             if (comp in _dict):
                 return [_dict[comp], i]
-            _dict[self.arr[i]] = i
+            else:
+                _dict[self.arr[i]] = i
         return False
         
 if __name__ == "__main__":
