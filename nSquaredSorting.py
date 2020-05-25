@@ -135,7 +135,15 @@ def balancedOrNot(myStr):
                 return "Unbalanced"
     if len(stack) == 0: 
         return "Balanced"
- 
+
+def getFixedPointElement(arr):
+	for i in range(len(arr)):
+		if (arr[i] == i) :
+			return i
+	return False
+
+
+print(getFixedPointElement([1,5,7,8]))
 
 # Driver code 
 #string = "{[]{()}}"
