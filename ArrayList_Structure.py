@@ -1,5 +1,5 @@
 '''
-Implementation of an array list data structure:
+Implementation of an array list data structure
 '''
 class ArrayList:
 	def __init__(self, arr):
