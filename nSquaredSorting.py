@@ -135,6 +135,7 @@ def balancedOrNot(myStr):
                 return "Unbalanced"
     if len(stack) == 0: 
         return "Balanced"
+    return "Unbalanced"
 
 def getFixedPointElement(arr):
 	for i in range(len(arr)):
