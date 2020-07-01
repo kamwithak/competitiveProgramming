@@ -35,9 +35,9 @@ class LinkedList:
 		self.tail = self.head
 		self.head = prev
 
-	def addToFront(self, newNode):						# O(1) - constant time	
-		newNode.next = self.head
-		self.head = newNode								# readjusting the head ptr
+	def addToFront(self, new_node):							# O(1) - constant time	
+		new_node.next = self.head
+		self.head = new_node
 		self.curNumberOfNodes += 1
 
 	def getHead(self):
