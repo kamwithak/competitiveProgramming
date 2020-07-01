@@ -27,11 +27,13 @@ class LinkedList:
 	def reverse(self):
 		cur = self.head
 		prev = None
+		
 		while cur:
 			next_node = cur.next
 			cur.next = prev
 			prev = cur
 			cur = next_node
+
 		self.tail = self.head
 		self.head = prev
 
