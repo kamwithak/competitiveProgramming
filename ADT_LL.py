@@ -8,7 +8,6 @@ class LinkedList:
 		self.head = head	
 		self.tail = self.head
 		self.curNumberOfNodes = 1
-		
 		self.loadLinkedList(size)
 
 	def loadLinkedList(self, tailValue):
@@ -24,6 +23,17 @@ class LinkedList:
 			cur = cur.next
 		_str += 'None'
 		print(_str)
+
+	def reverse(self):
+		cur = self.head
+		prev = None
+		while cur:
+			next_node = cur.next
+			cur.next = prev
+			prev = cur
+			cur = next_node
+		self.tail = self.head
+		self.head = prev
 
 	def addToFront(self, newNode):						# O(1) - constant time	
 		newNode.next = self.head
@@ -41,7 +51,14 @@ class LinkedList:
 
 if __name__ == '__main__':
 	obj = LinkedList(10)
-	#obj.loadLinkedList(100)
+
+	obj.printIteratively()
+	print(obj.getHead().value)
+	print(obj.getTail().value)
+
+	print("Reverse LinkedList:")
+	obj.reverse()
+
 	obj.printIteratively()
 	print(obj.getHead().value)
 	print(obj.getTail().value)
