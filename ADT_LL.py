@@ -18,7 +18,7 @@ class LinkedList:
 	def printIteratively(self):
 		cur = self.head
 		_str = ''
-		while cur:										# O(n) - iterative implementation
+		while cur:								# O(n) - iterative implementation
 			_str += str(cur.value) + ' -> '
 			cur = cur.next
 		_str += 'None'
