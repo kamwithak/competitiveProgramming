@@ -1,3 +1,7 @@
+#
+#
+#
+
 def sum(lo, hi):
 	if (lo > hi):
 		return 0
@@ -139,7 +143,7 @@ def balancedOrNot(myStr):
 
 def getFixedPointElement(arr):
 	for i in range(len(arr)):
-		if (arr[i] == i) :
+		if (arr[i] == i):
 			return i
 	return False
 

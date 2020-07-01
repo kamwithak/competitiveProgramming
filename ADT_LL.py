@@ -8,33 +8,32 @@ class LinkedList:
 		self.head = head	
 		self.tail = self.head
 		self.curNumberOfNodes = 1
-		
 		self.loadLinkedList(size)
 
 	def loadLinkedList(self, tailValue):
 		if tailValue == 0: return
 		for num in range(2, tailValue+1):
 			self.addToFront(Node(num))
-
-	def loadLinkedList2(self, tailValue):
-		if tailValue == 0: return
-		for num in range(2, tailValue+1):
-			self.addToFront(Node(num))
-		#if tailValue % 2 == 0:
-		#else:
-
-	def __str__(self, cur):								# O(n) - recursive implementation								
-		print("yeeee")
-		if cur != None:									# iterates through linked list starting at node 'cur'
-			print(cur.value)
-			self.__str__(cur.next)
-
 	
-	#def printIteratively(self):
-		#cur = self.head
-		#while cur:										# O(n) - iterative implementation
-			#print(cur.value)
-			#cur = cur.next
+	def printIteratively(self):
+		cur = self.head
+		_str = ''
+		while cur:										# O(n) - iterative implementation
+			_str += str(cur.value) + ' -> '
+			cur = cur.next
+		_str += 'None'
+		print(_str)
+
+	def reverse(self):
+		cur = self.head
+		prev = None
+		while cur:
+			next_node = cur.next
+			cur.next = prev
+			prev = cur
+			cur = next_node
+		self.tail = self.head
+		self.head = prev
 
 	def addToFront(self, newNode):						# O(1) - constant time	
 		newNode.next = self.head
@@ -49,25 +48,17 @@ class LinkedList:
 
 	def getCurrentSizeOfLinkedList(self):
 		return self.curNumberOfNodes
-	
-	#def addToEnd(self, cur, value):						# O(n) - recursive implementation
-	#	if cur != None:
-	#		self.addToEnd(cur.next, value)				# buggy,
-	#	else:											# from here
-	#		newNode = Node(value) ; lastNode = self.getLastNode()
-	#		lastNode.next = newNode
-	#		self.tail = newNode
-
-#obj = LinkedList(Node(1), Node(5)) 						# head and tail nodes defined as args
-#obj.head.next = Node(2, Node(3, Node(4, Node(5))))		# cur.next until tail node
-#obj.addToFront(0)
-#obj.addToEnd(obj.head, 10)
-#obj.__str__(obj.head)
-#print(obj.tail.value)
 
 if __name__ == '__main__':
-	obj = LinkedList(100)
-	#obj.loadLinkedList(100)
-	obj.__str__(obj.getHead())
+	obj = LinkedList(10)
+
+	obj.printIteratively()
+	print(obj.getHead().value)
+	print(obj.getTail().value)
+
+	print("Reverse LinkedList:")
+	obj.reverse()
+
+	obj.printIteratively()
 	print(obj.getHead().value)
 	print(obj.getTail().value)

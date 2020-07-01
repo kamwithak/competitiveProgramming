@@ -13,10 +13,11 @@ class ArrayList:
 	# return length of input array
 	def getSize(self):
 		return self.size
+
 	# append to the end of the array
 	def appendToArray(self, e):
 		self.arr.append(e)
-		size += 1
+		self.size += 1
 
 	# get array value at index i
 	def getAtIndex(self, i):
@@ -53,8 +54,6 @@ class ArrayList:
 				q -= 1
 		except IndexError:
 			raise Exception("index out of bounds")
-
-
 
 if __name__ == '__main__':
 
