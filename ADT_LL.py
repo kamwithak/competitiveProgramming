@@ -18,7 +18,7 @@ class LinkedList:
 	def printIteratively(self):
 		cur = self.head
 		_str = ''
-		while cur:								# O(n) - iterative
+		while cur:								          # O(n) - iterative implementation
 			_str += str(cur.value) + ' -> '
 			cur = cur.next
 		if cur is None: _str += 'None'
@@ -60,5 +60,9 @@ if __name__ == '__main__':
 	obj.reverse()
 
 	obj.printIteratively()
+
 	print("Head: " + obj.getHead().value)
 	print("Tail: " + obj.getTail().value)
+
+	print(obj.getHead().value)
+	print(obj.getTail().value)
