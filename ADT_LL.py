@@ -18,11 +18,11 @@ class LinkedList:
 	def printIteratively(self):
 		cur = self.head
 		_str = ''
-		while cur:								# O(n) - iterative implementation
+		while cur:								          # O(n) - iterative implementation
 			_str += str(cur.value) + ' -> '
 			cur = cur.next
-		_str += 'None'
-		print(_str)
+		if cur is None: _str += 'None'
+		print('LinkedList: ' + _str)
 
 	def reverse(self):
 		cur = self.head
@@ -35,7 +35,7 @@ class LinkedList:
 		self.tail = self.head
 		self.head = prev
 
-	def addToFront(self, new_node):							# O(1) - constant time	
+	def addToFront(self, new_node):				# O(1) - constant time	
 		new_node.next = self.head
 		self.head = new_node
 		self.curNumberOfNodes += 1
@@ -53,12 +53,16 @@ if __name__ == '__main__':
 	obj = LinkedList(10)
 
 	obj.printIteratively()
-	print(obj.getHead().value)
-	print(obj.getTail().value)
+	print("Head: " + obj.getHead().value)
+	print("Tail: " + obj.getTail().value)
 
-	print("Reverse LinkedList:")
+	print("Reverse operation...")
 	obj.reverse()
 
 	obj.printIteratively()
+
+	print("Head: " + obj.getHead().value)
+	print("Tail: " + obj.getTail().value)
+
 	print(obj.getHead().value)
 	print(obj.getTail().value)
