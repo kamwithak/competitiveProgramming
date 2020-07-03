@@ -66,3 +66,4 @@ if __name__ == '__main__':
 
 	print(obj.getHead().value)
 	print(obj.getTail().value)
+  
