@@ -33,5 +33,3 @@ if __name__ == "__main__":
     root.insert(3)
     root.insert(4)
     root.PrintTree()
-    
-
