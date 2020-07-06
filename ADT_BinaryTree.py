@@ -24,8 +24,20 @@ class Node:
             return self.key
         if data < self.key: return self.left.search(data)
         else: return self.right.search(data)
+    
+    def minValueNode(self):
+        cur = self
+        while (cur.left is not None):
+            cur = cur.left
+        return cur.key
 
-    def PrintTree(self):
+    def maxValueNode(self):
+        cur = self
+        while (cur.right is not None):
+            cur = cur.right
+        return cur.key
+
+    def PrintTreeInOrder(self):
         if self.left:
             self.left.PrintTree()
         print(self.key)
@@ -41,5 +53,5 @@ if __name__ == "__main__":
     root.insert(60)
     root.insert(80)
     
-    print(root.search(50))
-    #root.PrintTree()
+    print(root.maxValueNode())
+    #root.PrintTreeInOrder()
