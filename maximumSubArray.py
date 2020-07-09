@@ -40,4 +40,4 @@ class maximumSubArraySum:
 
 if __name__ == '__main__':
 	obj = maximumSubArraySum([-1,2,4,-3,5,2,-5,2])
-	obj.bubbleSort()
+	obj.linearSolution()
