@@ -38,7 +38,7 @@ class MergeTwoArrays():
                 self.nums1.insert(k, self.nums1[i])
             else:
                 j-=1
-                self.nums1.insert(k, self.nums1[j])
+                self.nums1.insert(k, self.nums2[j])
         
         while(j >= 0):
             k-=1
