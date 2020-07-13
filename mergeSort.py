@@ -90,12 +90,5 @@ class MergeTwoArrays():
         pass
 
 if __name__ == "__main__":
-    #l1 = ListNode(1, ListNode(2, ListNode(4)))
-    #l2 = ListNode(1, ListNode(3, ListNode(4)))
-
-    #obj = MergeTwoLists(l1, l2)
-    #print(obj.getSize(l1))
-
-    obj = MergeTwoArrays([1,3,5,7],[0,2,4,6],4,4)
+    obj = MergeTwoArrays([1,3,5,7], [0,2,4,6], 4, 4)
     print(obj.merge())
-    print(obj.mergeInPlace())
