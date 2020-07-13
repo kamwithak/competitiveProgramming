@@ -42,7 +42,6 @@ class MergeTwoArrays():
             k-=1
             j-=1
             self.nums1.insert(k, self.nums1[j])
-        
         return self.nums1
 
 if __name__ == "__main__":
