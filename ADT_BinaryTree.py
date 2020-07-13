@@ -1,4 +1,4 @@
-class Node:
+class BSTNode:
     def __init__(self, key, left=None, right=None):
         self.key = key
         self.left = left
@@ -8,12 +8,12 @@ class Node:
         if self.key:
             if data < self.key:
                 if self.left is None:
-                    self.left = Node(data)
+                    self.left = BSTNode(data)
                 else:
                     self.left.insert(data)
             elif data > self.key:
                 if self.right is None:
-                    self.right = Node(data)
+                    self.right = BSTNode(data)
                 else:
                     self.right.insert(data)
         else:
@@ -45,7 +45,7 @@ class Node:
             self.right.PrintTree()
 
 if __name__ == "__main__":
-    root = Node(50)
+    root = BSTNode(50)
     root.insert(30)
     root.insert(20)
     root.insert(40)
