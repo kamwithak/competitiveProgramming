@@ -19,7 +19,7 @@ class maximumSubArraySum:
 				bestSum = max(curSum, bestSum)
 		print(self.arr)
 		print("best sum: " + str(bestSum))
-	
+		
 	def quadraticSolution(self):
 		bestSum = 0
 		for a in range(len(self.arr)):
