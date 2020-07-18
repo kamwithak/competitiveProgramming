@@ -46,5 +46,4 @@ class MergeTwoArrays():
 
 if __name__ == "__main__":
     obj = MergeTwoArrays([1,3,5,7], [0,2,4,6], 4, 4)
-    #print(obj.merge())
     print(obj.mergeInPlace())
