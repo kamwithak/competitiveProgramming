@@ -15,5 +15,3 @@ def balancedOrNot(myStr):
     if len(stack) == 0: 
         return "Balanced"
     return "Unbalanced"
-
-print(balancedOrNot('{'))
