@@ -1,7 +1,7 @@
 class maximumSubArraySum:
 	def __init__(self, arr):
 		self.arr = arr
-
+		
 	def bubbleSort(self):
 		for a in range(len(self.arr)):
 			for b in range(a, len(self.arr)):
