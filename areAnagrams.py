@@ -1,3 +1,4 @@
+#
 class areAnagrams:
     def __init__(self, str1="", str2=""):
         self.str1 = str1
