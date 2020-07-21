@@ -13,7 +13,7 @@ class ArrayList:
 	# append to the end of the array
 	def appendToArray(self, e):
 		self.arr.append(e)
-		size += 1
+		self.size += 1
 
 	# get array value at index i
 	def getAtIndex(self, i):

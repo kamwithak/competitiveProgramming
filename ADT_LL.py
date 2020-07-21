@@ -23,11 +23,11 @@ class LinkedList:
 		#if tailValue % 2 == 0:
 		#else:
 
-	def __str__(self, cur):								# O(n) - recursive implementation								
-		print("yeeee")
-		if cur != None:									# iterates through linked list starting at node 'cur'
-			print(cur.value)
-			self.__str__(cur.next)
+	#def __str__(self, cur):								# O(n) - recursive implementation								
+		#print("yeeee")
+		#if cur != None:									# iterates through linked list starting at node 'cur'
+			#print(cur.value)
+			#self.__str__(cur.next)
 
 	
 	#def printIteratively(self):
