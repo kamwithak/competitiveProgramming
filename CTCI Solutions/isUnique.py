@@ -18,10 +18,10 @@ Time: O(n), where n is len(str)
 Space: O(n), list
 '''
 def isUnique1(str: str) -> bool:
-    if (len(str) > 256): return False               # too long, MUST REPEAT CHARS
-    flag_arr = [False] * 256                        # arr of length 256, boolean flas
+    if (len(str) > 256): return False
+    flag_arr = [False] * 256
     for i in str:
-        index = ord(i)                              # get unicode
+        index = ord(i)
         if (flag_arr[index]): return False
         flag_arr[index] = True 
     return True
