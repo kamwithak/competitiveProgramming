@@ -1,3 +1,7 @@
+#
+#
+#
+
 def sum(lo, hi):
 	if (lo > hi):
 		return 0
@@ -45,7 +49,6 @@ def findRepeatedElementsInList(myList):							# O(n^2)
 
 def findRepeatedElementsEfficiently(myList):
 	_dict = {}
-	tmp = []
 	steps = 0
 	for elem in myList:
 		steps += 1
