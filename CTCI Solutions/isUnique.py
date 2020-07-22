@@ -9,7 +9,7 @@ ANS:
 Depends on encoding method, ASCII (128 bit or 256 bit charcter mapping?), or Unicode (UTF-8/16/32)
 We can assume Extended ASCII with 256 possible characters
 => str CANNOT have greater length than 256 characters, without having the same chars repeat
-- Create array of boolean flags, iterate over string, check the ascii encoding to map the associated number as an index with a bool
+=> Create array of boolean flags, iterate over string, check the ascii encoding to map the associated number as an index with a bool
 => set value to True everytime we iterate over char, if we iterate again over same char, break loop, we know it isn't unique!
 '''
 
