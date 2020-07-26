@@ -26,7 +26,7 @@ def checkPermutation1(str1: str, str2: str) -> bool:
 #print(checkPermutation1("cba", "abc"))
 
 '''
-Time: O(n), using the hashtable for constant time look up
+Time: O(n), using a hashtable for constant time look up
 Space: O(n), atmost n key-value pairs
 '''
 def checkPermutation2(str1: str, str2: str) -> bool:
