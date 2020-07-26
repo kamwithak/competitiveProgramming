@@ -16,14 +16,10 @@ Time: O(n)
 Space: O(n)
 '''
 def oneAway(str1: str, str2: str) -> bool:
-    if (len(str1) == len(str2)):
-        # replace a char in str1 to get str2
+    if (len(str1) == len(str2)):        # replace a char in str1 to get str2
         pass
-    if (len(str1) < len(str2)):
-        # insert a char in str1 to get str2
+    if (len(str1) < len(str2)):         # insert a char in str1 to get str2
         pass    
-    if (len(str1) > len(str2):
-        # insert a char in str2 to get str1 
+    if (len(str1) > len(str2)):         # insert a char in str2 to get str1 
         pass
-    
     return False
