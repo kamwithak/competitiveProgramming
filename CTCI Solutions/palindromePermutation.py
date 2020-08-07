@@ -28,12 +28,10 @@ def palindromePermutation(str: str) -> bool:
             else:
                 _dict[str[i]] += 1
     # ~
-
     _numOdd = 0                                             # count the number of occurences with odd parity
     for key in _dict:    
         if (_dict[key] % 2 != 0):
             _numOdd += 1
-
     # ~
 
     return not _numOdd > 1                                  # true if number of occurences with odd parity <= 1
