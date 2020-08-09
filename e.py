@@ -16,4 +16,10 @@ def e(n):
 	else:
 		return 1/f(n) + e(n - 1)
 
-print(f"e is approximately {e(99)}")
+# print(f"e is approximately {e(99)}")
+
+def fibo(n):
+	return n if n <= 1 else fibo(n-1) + fibo(n-2)
+
+# for i in range(10):
+# 	print(fibo(i))
