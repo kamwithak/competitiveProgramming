@@ -18,7 +18,7 @@ class PalindromeIdentifier:
             if (self.str[i] != self.str[n-i-1]):
                 return False
         return True
-
+;
 if __name__ == "__main__":
     _str = "racecar"
     obj = PalindromeIdentifier(_str)
