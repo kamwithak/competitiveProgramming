@@ -9,8 +9,8 @@ ANS:
 '''
 
 '''
-Time: O(n)
-Space: O(n)
+Time:
+Space:
 '''
 def stringCompression(str1: str) -> str:
     ans = ''
