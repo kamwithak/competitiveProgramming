@@ -20,5 +20,7 @@ class PalindromeIdentifier:
         return True
 
 if __name__ == "__main__":
-    obj = PalindromeIdentifier("racecar")
-    print(obj.isPalindromeResursive(obj.str))
+    _str = "racecar"
+    obj = PalindromeIdentifier(_str)
+    print(obj.isPalindromeIterative())
+    print(obj.isPalindromeResursive(_str))
