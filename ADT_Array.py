@@ -2,8 +2,6 @@ class Array:								# ADT ~ Array of {key, value} arrays
 	def __init__(self):
 		self.array = []
 
-	# O(n) ~ linear time, inefficient, we can do better ;)
-
 	def printRelation(self):
 		for pair in self.array:					# print each (key, value) pair
 			print(pair)
