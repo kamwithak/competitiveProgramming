@@ -3,15 +3,12 @@ class PalindromeIdentifier:
         self.str = str
 
     def isPalindromeResursive(self, _str):
-        return self.isPalindromeHelper(_str)
-
-    def isPalindromeHelper(self, _str):
         index = len(_str)
         if (index == 0 or index == 1):
             return True
         
         if (_str[0] == _str[index - 1]):
-            return self.isPalindromeHelper(_str[1:])
+            return self.isPalindromeResursive(_str[1:])
         
         return False
 
@@ -23,5 +20,7 @@ class PalindromeIdentifier:
         return True
 
 if __name__ == "__main__":
-    obj = PalindromeIdentifier("racecar")
-    print(obj.isPalindromeResursive(obj.str))
+    _str = "racecar"
+    obj = PalindromeIdentifier(_str)
+    print(obj.isPalindromeIterative())
+    print(obj.isPalindromeResursive(_str))
