@@ -1,7 +1,3 @@
-#
-#
-#
-
 def sum(lo, hi):
 	if (lo > hi):
 		return 0
