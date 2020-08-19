@@ -20,13 +20,13 @@ With sorting,
 - now, we can solve the original problem by implementing question 2)
 => remove repeated elements in-place, as per question 2)
 
-2)
+2) ~
 
 '''
 
 '''
 2) Sorted array as input, legnth of new array as output
-Time: O(n), n is the 
+Time: O(n), n is the number of elements in the n-array
 Space: O(n)
 '''
 def removeDups4(arr):
@@ -43,7 +43,7 @@ def removeDups4(arr):
 
 '''
 1 a) Unsorted array as input
-Time: O(n), n is the 
+Time: O(n), n is the number of elements in the n-array
 Space: O(n)
 '''
 def removeDups3(arr):
@@ -90,7 +90,7 @@ def removeDups1(arr):
 
     for key in mp: _arr.append(key)
 
-    # obvious assertion
+    # true assertion
     # print(len(_arr) == len(mp))
 
     return _arr
