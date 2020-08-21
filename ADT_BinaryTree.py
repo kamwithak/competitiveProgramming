@@ -44,6 +44,7 @@ class BSTNode:
         if self.right:
             self.right.PrintTree()
 
+#!
 if __name__ == "__main__":
     root = BSTNode(50)
     root.insert(30)
