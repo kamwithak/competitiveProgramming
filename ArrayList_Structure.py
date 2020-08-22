@@ -1,5 +1,5 @@
 '''
-Implementation of an array list data structure
+Implementation of an array list data structure !
 '''
 class ArrayList:
 	def __init__(self, arr):
@@ -70,9 +70,3 @@ if __name__ == '__main__':
 	#arr.appendToArray('kam')
 
 	arr.printArr()
-
-
-
-
-
-
