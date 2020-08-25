@@ -8,6 +8,7 @@ Write code to remove duplicates from an unsorted linked list.
 
 '''
 ANS:
+We want to iterate over a LL and re
 
 '''
 
@@ -23,12 +24,12 @@ Space: O(n)
 def removeDups(head) -> Node:
   nodes = {}
   node = head
-  while (node != None):
+  while (node.next != None):
     if node.data in nodes.keys():
       node.data = node.next.data
       node.next = node.next.next
     else:
-      nodes[node.data] = 1
+      nodes[node.data] = True
       node = node.next
   return head
 
@@ -39,7 +40,7 @@ def printNodes(head):
     node = node.next
 
 if __name__ == "__main__":
-  head = Node(1,Node(3,Node(3,Node(1,Node(5)))))
+  head = Node(1,Node(2,Node(4,Node(4,Node(5,Node(4,Node(4)))))))
   print("before:")
   printNodes(head)
   removeDups(head)
