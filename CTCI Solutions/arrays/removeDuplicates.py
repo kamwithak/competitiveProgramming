@@ -83,14 +83,13 @@ Time: O(n) where n is the number of elements in the n-array
 Space: O(n)
 '''
 def removeDups1(arr): 
-    # values set to zero, all keys have a unique value, by default
-    mp = {x : None for x in arr}
+    mp = {x : None for x in arr}                # values set to zero, all keys have a unique value, by default
     
     _arr = []
 
     for key in mp: _arr.append(key)
 
-    # true assertion
+    # Assertion:
     # print(len(_arr) == len(mp))
 
     return _arr
