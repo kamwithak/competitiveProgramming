@@ -13,5 +13,4 @@ Time:
 Space:
 '''
 def stringCompression(str1: str) -> str:
-    ans = ''
-    return ans
+    pass
