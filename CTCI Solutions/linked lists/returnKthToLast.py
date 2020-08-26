@@ -28,7 +28,7 @@ class Node():
 Time: O(n)
 Space: O(n)
 '''
-def kthToLast(head: Node, n: int, k: int) -> Node:
+def kthToLast1(head: Node, n: int, k: int) -> Node:
     node = head
     if (k<0):                               # edge cases
         for i in range(0, n):
@@ -44,8 +44,22 @@ def kthToLast(head: Node, n: int, k: int) -> Node:
         node = node.next
     return None
 
+'''
+2)
+Time: O(n)
+Space: O(n)
+'''
+def kthToLast2(head: Node, k: int) -> Node:
+    if (head == None):
+        return 0
+    index = kthToLast2(head.next, k) + 1
+    if (index == k):
+        print(head.data)
+    return index
+
 if __name__ == "__main__":
     head = Node(1,Node(2,Node(3,Node(4,Node(5,Node(6,Node(7)))))))
-    print(kthToLast(head, 7, 0).data)
-    print(kthToLast(head, 7, 6).data)
-
+    print(kthToLast1(head, 7, 0).data)
+    print(kthToLast1(head, 7, 6).data)
+    kthToLast2(head, 1)
+    kthToLast2(head, 7)
