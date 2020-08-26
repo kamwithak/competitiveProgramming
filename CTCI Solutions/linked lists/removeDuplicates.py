@@ -6,12 +6,6 @@ Write code to remove duplicates from an unsorted linked list.
 
 '''
 
-'''
-ANS:
-We want to iterate over a LL and re
-
-'''
-
 class Node():
   def __init__(self, data=None, next=None):
     self.data = data
