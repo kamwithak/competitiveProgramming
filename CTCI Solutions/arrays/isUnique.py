@@ -1,11 +1,13 @@
 '''
 PROBLEM STATEMENT:
+
 Implement an algorithm to determine if a string has all unique characters.
 What if you cannot use additional data structures?
 '''
 
 '''
 ANS:
+
 Depends on encoding method, ASCII (128 bit or 256 bit charcter mapping?), or Unicode (UTF-8/16/32)
 We can assume Extended ASCII with 256 possible characters
 => str CANNOT have greater length than 256 characters, without having the same chars repeat

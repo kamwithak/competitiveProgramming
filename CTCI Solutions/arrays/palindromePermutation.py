@@ -1,5 +1,6 @@
 '''
 PROBLEM STATEMENT:
+
 Given a n-char string, write a function to check if it is a permutation of a palindrome.
 A palindrome is a word or phrase that is the same forwards and backwards. A permutation
 is a rearrangement of letters. The palindrome does not need to be limited to just dictionary words. ie) spaces and numbers
@@ -7,6 +8,7 @@ is a rearrangement of letters. The palindrome does not need to be limited to jus
 
 '''
 ANS:
+
 Clever algorithm here, we use a hash table to count how many times each char appears in a string.
 Then, we iterate over the keys of the hashtable and ensure that no more than one char has an odd count.
 This is how we determine if a palindrome exists:

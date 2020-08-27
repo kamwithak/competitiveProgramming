@@ -1,11 +1,13 @@
 '''
 PROBLEM STATEMENT:
+
 Check Permutation:
 Given two strings, write a method to decide if one is a permutation of the other.
 '''
 
 '''
 ANS:
+
 We can either sort the strings individually, and compare if the resulting strings are equivalent
 Although not optimal, it is clean and easy to understand.
 Or, we can count the number of occurences for each character, and check if that is equivalent
