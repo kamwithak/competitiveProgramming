@@ -23,7 +23,7 @@ Space: O(n)
 def removeNode(aNode: Node):
     aNode.data = aNode.next.data
     aNode.next = aNode.next.next
-    return True
+    return True                                                                    
 
 def printNodes(head: Node):
     node = head
