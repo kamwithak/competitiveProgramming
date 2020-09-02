@@ -19,20 +19,15 @@ So the result of function 'meeting(s)' would, for example, be:
 
 '''
 def meeting(s):
-    s = s.upper()
-    s = s.split(';')
+    s = s.upper().split(';')
     arr = []
-    tmpString = ''
     
     for i in s:
         i = i.split(':')
-        string = f'({i[1]}, {i[0]})'
-        arr.append(string)
+        arr.append(f'({i[1]}, {i[0]})')
     arr.sort()
-    
-    print(arr)
 
-    output = ""
+    output = ''
     for j in arr:
         output += j
     return output
