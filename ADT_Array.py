@@ -30,7 +30,6 @@ class Array:								# ADT ~ Array of {key, value} arrays
 		return 'Key does not exist'
 
 
-	
 arr = Array()
 arr.insert(0,'a')
 arr.insert(1,'b')
