@@ -18,32 +18,19 @@ So the result of function 'meeting(s)' would, for example, be:
 "(CORWILL, ALFRED)(CORWILL, FRED)(CORWILL, RAPHAEL)(CORWILL, WILFRED)(TORNBULL, BARNEY)(TORNBULL, BETTY)(TORNBULL, BJON)"
 
 '''
-
-'''
-ANS:
-
-'''
-
-'''
-Time: O()
-Space: O()
-'''
 def meeting(s):
-    s = s.split(";")
-    _dict = {}
-    ptr = 0
-    for pair in s:
-        firstName, lastName = pair.split(':')
-        _dict[ptr] = (lastName.upper(), firstName.upper())
-        ptr += 1
-    for i in range(len(_dict)-1):
-        for j in range(len(_dict)):
-            if (_dict[i][0] != _dict[j][0] and _dict[i][0] > _dict[j][0]):
-                _dict[i], _dict[j] = _dict[j], _dict[i]
-            elif (_dict[i][0] == _dict[j][0] and _dict[i][1] > _dict[j][1]):
-                _dict[i], _dict[j] = _dict[j], _dict[i]
-    for key in _dict:
-        print(str(_dict[key]))
+    s = s.upper().split(';')
+    arr = []
+    
+    for i in s:
+        i = i.split(':')
+        arr.append(f'({i[1]}, {i[0]})')
+    arr.sort()
+
+    output = ''
+    for j in arr:
+        output += j
+    return output
 
 if __name__ == "__main__":
     s = "Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill";
