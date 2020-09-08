@@ -1,6 +1,6 @@
 '''
 
-Welcome!
+Welcome! :)
 
  This is a toy program to print the approximated value of e ~ 2.17828
 =>    1/(n!) + 1/((n-1)!) + 1/((n-2)!) + ... + 1/(3!) + 1/(2!) + 1/(1!) + 1/(0!) = e, as n -> inf
