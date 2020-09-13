@@ -1,4 +1,4 @@
-class Array:									# ADT ~ Array of {key, value} arrays!
+class Array:									# ADT ~ Array of {key, value} arrays
 	def __init__(self):
 		self.array = []
 
