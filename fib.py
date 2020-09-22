@@ -1,6 +1,7 @@
 """
 These are example implementations, with varying complexities,
 for returning the nth # in the fibonacci sequence.
+~
 Kam
 """
 
@@ -40,11 +41,29 @@ def iterativeFib1(n):
 Time: O(N)
 Space: O(N)
 
-""" 
-def recursiveFib(n):
+"""
+_dict = {}
+def recursiveFib2(n):
     if (n == 0 or n == 1): return n
-    else: return recursiveFib(n-2) + recursiveFib(n-1)
+    if (n not in _dict):
+        _dict[n] = recursiveFib2(n-2) + recursiveFib2(n-1)
+    else:
+        return _dict[n]
+    return _dict[n]
+
+""" 
+
+Time: O(2^N), exponential time
+Space: O(N), linear call stack
+
+"""
+def recursiveFib1(n):
+    if (n == 0): return 0
+    elif (n == 1 or n == 2): return 1
+    else: 
+        return recursiveFib1(n-2) + recursiveFib1(n-1)
+
 
 if __name__ == "__main__":
     for i in range(0, 20):
-        print(iterativeFib1(i) == iterativeFib2(i) == recursiveFib(i))
+        print(iterativeFib1(i) == iterativeFib2(i) == recursiveFib1(i) == recursiveFib2(i))
