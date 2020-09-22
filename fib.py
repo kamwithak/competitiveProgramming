@@ -1,7 +1,6 @@
 """
 These are example implementations, with varying complexities,
 for returning the nth # in the fibonacci sequence.
-
 Kam
 """
 
@@ -49,4 +48,3 @@ def recursiveFib(n):
 if __name__ == "__main__":
     for i in range(0, 20):
         print(iterativeFib1(i) == iterativeFib2(i) == recursiveFib(i))
-        
