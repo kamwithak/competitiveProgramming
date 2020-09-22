@@ -47,8 +47,6 @@ def recursiveFib2(n):
     if (n == 0 or n == 1): return n
     if (n not in _dict):
         _dict[n] = recursiveFib2(n-2) + recursiveFib2(n-1)
-    else:
-        return _dict[n]
     return _dict[n]
 
 """ 
