@@ -37,6 +37,34 @@ def iterativeFib1(n):
     return fib[n]
 
 """ 
+Memoization,
+Idea: cache values
+
+Practical/implicit example:
+    
+Time: O(N)
+Space: O(N)
+
+"""
+from functools import lru_cache
+
+@lru_cache(maxsize=1000)
+def recursiveFib3(n):
+    if (type(n) != int):
+        raise TypeError('Input must be of type int')
+    if (n < 0):
+        raise ValueError('Input must be non-negative')
+
+    if (n == 0 or n == 1): return n
+    elif (n == 2): return 1
+    return recursiveFib3(n-2) + recursiveFib3(n-1)
+
+
+""" 
+Memoization,
+Idea: cache values
+
+Explicit example:
 
 Time: O(N)
 Space: O(N)
@@ -61,7 +89,8 @@ def recursiveFib1(n):
     else: 
         return recursiveFib1(n-2) + recursiveFib1(n-1)
 
-
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 if __name__ == "__main__":
     for i in range(0, 20):
-        print(iterativeFib1(i) == iterativeFib2(i) == recursiveFib1(i) == recursiveFib2(i))
+        print(iterativeFib1(i) == iterativeFib2(i) == recursiveFib1(i) == recursiveFib2(i) == recursiveFib3(i))
+
