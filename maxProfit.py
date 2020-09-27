@@ -1,6 +1,7 @@
 class MaxProfit():
     def __init__(self, prices):
         self.prices = prices
+
     def maxProfitKTransaction(self):
         pass
 
