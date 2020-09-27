@@ -1,8 +1,8 @@
 class MaxProfit():
     def __init__(self, prices):
         self.prices = prices
-    
-    def maxProfitOneTransaction(self):
+
+    def maxProfitOneTransactionQuadratic(self):
         """
         Time:O(N^2)
         Space:O(1)
@@ -19,5 +19,5 @@ class MaxProfit():
         return curMaxProfit
 
 if __name__ == "__main__":
-    obj = MaxProfit([7,1,5,3,6,4])
-    print(obj.maxProfitOneTransaction())
+    obj = MaxProfit([7,6,4,3,1])
+    print(obj.maxProfitOneTransactionQuadratic())
