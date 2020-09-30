@@ -3,7 +3,7 @@ class Array:									# ADT ~ Array of {key, value} arrays
 		self.array = []
 
 	def printRelation(self):
-		for pair in self.array:					# print each (key, value) pair
+		for pair in self.array:						# print each (key, value) pair
 			print(pair)
 
 	def alreadyExists(self, key):
@@ -14,11 +14,11 @@ class Array:									# ADT ~ Array of {key, value} arrays
 
 	def insert(self, key, value):
 		if not self.alreadyExists(key):					# check to see if key isn't already in array
-			return self.array.append((key, value))		# if true, add (key, value) pair to end of array
+			return self.array.append((key, value))			# if true, add (key, value) pair to end of array
 
 	def remove(self, key):
-		for pair in self.array:							# iterate linearly
-			if pair[0] == key:							# find arg key at some index, call that index i
+		for pair in self.array:						# iterate linearly
+			if pair[0] == key:					# find arg key at some index, call that index i
 				return self.array.remove(pair)			# remove (key, value) pair @ index i
 		return 'Pair does not exist'
 
