@@ -12,11 +12,9 @@ For example, given the array ["a", "b", "c"] and the permutation [2, 1, 0], retu
 """
 
 def applyPermutationToArray(arr, perm):
-    _dict = {} ; j = 0 ; ans = []
+    masterArr = []
     for i in perm:
-        if (i not in _dict):
-            _dict[j] = i
-            j += 1
-    for k in range(len(arr)):
-        _dict[k]
+        masterArr.append(arr[i])
+    return masterArr
 
+print(applyPermutationToArray(['a', 'b', 'c'], [2,1,0]))
