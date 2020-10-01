@@ -48,16 +48,15 @@ Space: linear time
 """
 def countSmiley2(arr):
     # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    def validSmileWithTwoCharacters(eyes, noseOrMouth):
+        x = (eyes == ':' or eyes == ';')
+        y = (noseOrMouth == ')' or noseOrMouth == 'D')
+        return x and y
     def validSmileWithThreeCharacters(eyes, noseOrMouth, mouth):
         x = (eyes == ':' or eyes == ';')
         y = (noseOrMouth == '-' or noseOrMouth == '~')
         z = (mouth == ')' or mouth == 'D')
         return x and y and z
-
-    def validSmileWithTwoCharacters(eyes, noseOrMouth):
-        x = (eyes == ':' or eyes == ';')
-        y = (noseOrMouth == ')' or noseOrMouth == 'D')
-        return x and y
     # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ctr = 0
     for smile in arr:
@@ -79,7 +78,7 @@ import re
 def countSmiley3(arr):
     text = ''
     for elem in arr:
-        text+=elem
+        text += elem
     return len(re.findall('[:;][-~]?[)D]', text))
 
 print(countSmiley2([":)",";)",";~D"]))

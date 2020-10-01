@@ -1,3 +1,8 @@
+"""
+MaxProfit Class!
+Finds a maximum achievable profit, given k transactions!
+Constraint: 1 <= k <= n 
+"""
 class MaxProfit():
     def __init__(self, prices):
         self.prices = prices
@@ -7,8 +12,8 @@ class MaxProfit():
 
     def maxProfitOneTransactionQuadratic(self):
         """
-        Time:O(N^2)
-        Space:O(1)
+        Time: O(N^2)
+        Space: O(1)
         
         Returns:
             [int]: max profit with 1 transaction
