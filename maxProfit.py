@@ -27,5 +27,5 @@ class MaxProfit():
         return curMaxProfit
 
 if __name__ == "__main__":
-    obj = MaxProfit([7,6,4,3,1])
+    obj = MaxProfit([7, 6, 4, 3, 1])
     print(obj.maxProfitOneTransactionQuadratic())
