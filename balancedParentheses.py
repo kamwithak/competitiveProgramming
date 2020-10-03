@@ -8,7 +8,7 @@ def balancedOrNot(myStr):
         elif i in _map.keys():
             rightParanthesis = i 
             associatedLeftParanthesis = _map[rightParanthesis]
-            if (len(stack) > 0 and (associatedLeftParanthesis == stack[len(stack) - 1])):
+            if (len(stack) > 0 and (associatedLeftParanthesis == stack[-1])):
                 stack.pop() 
             else: 
                 return "Unbalanced"
