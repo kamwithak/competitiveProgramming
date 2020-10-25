@@ -4,7 +4,7 @@ Design a program to take a word as an input, and then encode it into a Pig Latin
 '''
 
 '''
-DESIGN:
+DESIGN: UNFINISHED
 '''
 
 def toPigLatin(_str: str) -> str:
