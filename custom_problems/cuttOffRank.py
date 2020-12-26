@@ -23,6 +23,7 @@ from typing import List
 
 def numPlayers(cuttOffRank: int, num: int, scores: List[int]):
     ranks = [sorted(scores).index(x)+1 for x in scores[::-1]]
+    print(ranks)
     ctr = 0
     for i in range(num):
         if (scores[i] != 0 and ranks[i] <= cuttOffRank):
