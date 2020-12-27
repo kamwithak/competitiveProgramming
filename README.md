@@ -1,2 +1,2 @@
 # competitiveProgramming
-Welcome my friend! This is where I practice problem solving techniques.
+Everything in this repo is for research and problem solving practice.
