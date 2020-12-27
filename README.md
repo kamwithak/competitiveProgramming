@@ -1,2 +1,1 @@
 # competitiveProgramming
-Enjoy!
