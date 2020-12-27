@@ -1,4 +1,3 @@
-!
 class Node:
 	def __init__(self, value, next=None):
 		self.value = str(value)
