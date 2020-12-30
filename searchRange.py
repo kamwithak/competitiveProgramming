@@ -7,15 +7,15 @@ class Solution:
     If target is not found in the array, return [-1, -1].
     """
     def searchRange(self, nums: List[int], target: int) -> List[int]:
-        res, targetFound = [], False
-        for i in range(len(nums)):
+        res, n, targetFound = [], len(nums), False
+        for i in range(n):
             if (nums[i] == target and not targetFound):
                 res.append(i)
                 targetFound = True
             elif (nums[i] != target and targetFound):
                 res.append(i-1)
                 targetFound = False
-            elif (i == len(nums)-1 and targetFound):
+            elif (i == n-1 and targetFound):
                 res.append(i)
                 targetFound = False
         if (not res): res.append(-1) ; res.append(-1)
