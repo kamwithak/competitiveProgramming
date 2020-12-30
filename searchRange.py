@@ -6,7 +6,22 @@ class Solution:
     Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.
     If target is not found in the array, return [-1, -1].
     """
-    def searchRange(self, nums: List[int], target: int) -> List[int]:
+
+    def searchRangeFaster(self, nums: List[int], target: int) -> List[int]:
+        pass
+
+    def searchRangeLinear(self, nums: List[int], target: int) -> List[int]:
+        """
+        Args:
+            nums (List[int]): sorted list of int-type numbers
+            target (int): target int we are looking for in nums
+
+        Returns:
+            List[int]: pair for starting and ending index
+        
+        Time: O(n)
+        Space: O(n)
+        """
         res, n, targetFound = [], len(nums), False
         for i in range(n):
             if (nums[i] == target and not targetFound):
@@ -23,4 +38,4 @@ class Solution:
         return res
 
 obj = Solution()
-print(obj.searchRange([1,2,4,4,4,5,5,9,9,11,11,11,11,12,12], 11))
+print(obj.searchRangeLinear([1,2,4,4,4,5,5,9,9,11,11,11,11,12,12], 12))
