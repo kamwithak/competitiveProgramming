@@ -11,10 +11,10 @@ class Solution():
         Ex) 'hello' & 'abchellodef' => [3, 7]
         """
         res = []
-        H, N = len(self.haystack), len(self.needle)
+        H_SIZE, N_SIZE = len(self.haystack), len(self.needle)
         ptrN, ptrH, matchFound = 0, 0, False
         
-        while (ptrH < H and not matchFound):
+        while (ptrH < H_SIZE and not matchFound):
             newH = ptrH
             newN = ptrN
             while (not matchFound):
@@ -24,7 +24,7 @@ class Solution():
                 newH += 1
                 newN += 1
 
-                if (newN == N):
+                if (newN == N_SIZE):
                     res.append(ptrH)
                     res.append(newH-1)
                     matchFound = True
