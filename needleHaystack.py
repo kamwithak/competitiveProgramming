@@ -7,16 +7,20 @@ class Solution():
     def needleInHaystack(self):
         """
         Given two strings, needle and haystack:
-        find the starting and ending index of needle in haystack
+        Find the starting and ending index of needle in haystack
         Ex) 'hello' & 'abchellodef' => [3, 7]
-        """
-        res = []
-        H_SIZE, N_SIZE = len(self.haystack), len(self.needle)
-        ptrN, ptrH, matchFound = 0, 0, False
         
-        while (ptrH < H_SIZE and not matchFound):
+        Analysis:
+        Time: O(mn) where m is H_SIZE and n is N_SIZE
+        Space: O(1)
+
+        """
+        res, matchFound = [], False
+        H_SIZE, N_SIZE = len(self.haystack), len(self.needle)
+        
+        for ptrH in range(H_SIZE):
             newH = ptrH
-            newN = ptrN
+            newN = 0
             while (not matchFound):
                 if (self.needle[newN] != self.haystack[newH]):
                     break
@@ -29,10 +33,9 @@ class Solution():
                     res.append(newH-1)
                     matchFound = True
 
-            ptrH += 1
         return res
 
 
 
-obj = Solution('kam','iiikamksiii')
+obj = Solution('hello','abchellodef')
 print(obj.needleInHaystack())
