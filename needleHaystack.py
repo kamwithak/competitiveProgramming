@@ -22,20 +22,15 @@ class Solution():
             newH = ptrH
             newN = 0
             while (not matchFound):
-                if (self.needle[newN] != self.haystack[newH]):
+                if (self.haystack[newH] != self.needle[newN]):
                     break
-
                 newH += 1
                 newN += 1
-
                 if (newN == N_SIZE):
                     res.append(ptrH)
                     res.append(newH-1)
                     matchFound = True
-
         return res
-
-
 
 obj = Solution('hello','abchellodef')
 print(obj.needleInHaystack())
