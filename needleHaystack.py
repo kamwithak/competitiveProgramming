@@ -4,7 +4,11 @@ class Solution():
         self.needle = needle
         self.haystack = haystack
 
-    def needleInHaystack(self):
+    def needleInHaystackPythonic(self):
+        idx = self.haystack.find(self.needle)
+        return idx, idx + len(self.needle) - 1
+    
+    def needleInHaystackCustom(self):
         """
         Given two strings, needle and haystack:
         Find the starting and ending index of needle in haystack
@@ -31,6 +35,6 @@ class Solution():
                     res.append(newH-1)
                     matchFound = True
         return res
-
+      
 obj = Solution('hello','abchellodef')
 print(obj.needleInHaystack())
