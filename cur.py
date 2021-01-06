@@ -12,9 +12,20 @@ For example, given the array ["a", "b", "c"] and the permutation [2, 1, 0], retu
 """
 
 def applyPermutationToArray(arr, perm):
-    masterArr = []
-    for i in perm:
-        masterArr.append(arr[i])
-    return masterArr
+    # NOT IN-PLACE:
+    # masterArr = []
+    # for i in perm:
+    #     masterArr.append(arr[i])
+    # return masterArr
+
+    # IN-PLACE:
+    hashMapArr, hashMapPerm = {}, {}
+    for i in range(len(perm)):
+        hashMapPerm[i] = perm[i]
+    for i in range(len(arr)):
+        hashMapArr[i] = arr[i]
+    for key in hashMapArr:
+        arr[key] = hashMapArr[hashMapPerm[key]]
+    return arr
 
 print(applyPermutationToArray(['a', 'b', 'c'], [2,1,0]))
