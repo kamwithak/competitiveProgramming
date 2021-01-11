@@ -31,7 +31,7 @@ class Solution():
 		"""
 		ptrA = 0 ; ptrB = 0 ; decisionPoint = False
 		while (ptrA < len(self.A) and ptrB < len(self.B)):
-    			if (not decisionPoint):
+			if (not decisionPoint):
 				print(self.A[ptrA])
 				ptrA+=1
 				decisionPoint = True
@@ -41,7 +41,7 @@ class Solution():
 				decisionPoint = False
 
 		while (ptrA < len(self.A)):
-    			print(self.A[ptrA])
+			print(self.A[ptrA])
 			ptrA += 1
 
 		while (ptrB < len(self.B)):
