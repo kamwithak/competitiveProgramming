@@ -11,7 +11,6 @@ def _sum(_input):
   
 # print(_sum([1,2,3,4,5]))
 
-
 """
 Write a function nmaed 'isEven' that takes a int as input,
 check if the int is even, then return True
@@ -53,9 +52,8 @@ def countChars(aStr):
       _dict[val] = 1 
   return _dict  
 
-print(countChars('HASAAN'))
-print({'H':1, 'A':3, 'S':1, 'N':1})
-
+# print(countChars('HASAAN'))
+# print({'H':1, 'A':3, 'S':1, 'N':1})
 
 def reverse(_list):
   return _list[::-1]
@@ -75,4 +73,4 @@ def main(aSequence, aMatrix):
     curMatrix = flip(subSequence, curMatrix)
   return curMatrix
 
-print(main('VH', [[1,2],[3,4]]))
+# print(main('VH', [[1,2],[3,4]]))
