@@ -10,7 +10,7 @@ def reverse(aString):
         j-=1
 
     return ''.join(aList)
-# print(reverse('kamran'))
+# print(reverse('asd'))
 
 def findMissing(aList, aListMissingOne):
     """
