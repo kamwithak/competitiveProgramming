@@ -74,3 +74,24 @@ def main(aSequence, aMatrix):
   return curMatrix
 
 # print(main('VH', [[1,2],[3,4]]))
+
+
+def reverse(arr):
+  def swap(i, j):
+    tmp = arr[i]
+    arr[i] = arr[j]
+    arr[j] = tmp
+
+  i = 0
+  j = len(arr)-1
+
+  while (i <= j):
+
+    swap(i,j)
+
+    i+=1
+    j-=1
+
+  return arr
+
+print(reverse([1,2,3,4]))
