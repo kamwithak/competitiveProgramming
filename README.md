@@ -24,7 +24,7 @@
 <br />
 <p align="center">
 
-  <h3 align="center">Problem Solving & CS Fundamentals Repository</h3>
+  <h3 align="center">CS Fundamentals & Problem Solving Repository</h3>
 
   <p align="center">
     💜🌍
