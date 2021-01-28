@@ -1,4 +1,4 @@
-# Problem Solving Practice Repository
+# competitiveProgramming
 <!--
 *** Thanks for checking out this README Template. If you have a suggestion that would
 *** make this better, please fork the repo and create a pull request or simply open
@@ -24,7 +24,7 @@
 <br />
 <p align="center">
 
-  <h3 align="center">competitiveProgramming</h3>
+  <h3 align="center">Problem Solving & CS Fundamentals Repository</h3>
 
   <p align="center">
     💜🌍
