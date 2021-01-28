@@ -43,12 +43,11 @@ class Solution:
 	
 	def fastTwoSumUnordered(self, nums: List[int], target: int) -> List[int]:		# assumes unordered input
 		_dict = {}																	# init dict
-		for i in range(0, len(nums)):												# iterate over array
+		for i in range(0, len(nums)):												# iterate over array and add num[i] to map
 			comp = target - nums[i]													# compute complement
-			if (comp in _dict):												
+			if (comp in _dict):														# if complement has been cached, return it
 				return [_dict[comp], i]
-			else:
-				_dict[nums[i]] = i
+			_dict[nums[i]] = i
 		return False
 
 	def fastTwoSumOrdered(self, nums: List[int], target: int) -> List[int]:		# assumes ordered input
@@ -73,7 +72,7 @@ class Solution:
 	def fastThreeSumUnsorted(self, nums: List[int], target: int) -> List[int]:
 		# We can reduce 3SUM to 2SUM: a + b + c = k => a + b = k - c = l
 		arr = []
-		nums.sort()
+		nums.sort()																		# efficient sort
 		for c in range(1, len(nums)-2):
 			if (c == 0 or (c > 0 and nums[c] != nums[c-1])):
 				l, r = c+1, len(nums)-1
