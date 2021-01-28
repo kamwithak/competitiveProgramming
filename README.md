@@ -43,7 +43,7 @@
 ## About The Project
 
 This is a repo containing various programming problems that cover CS Fundamentals, Algorithms, and Advanced Data Structures.
-Generally, the problems and solutions that you will find here are well-studied and can be further explored on platforms like YouTube.
+Generally, the problems and solutions that you will find here are well-studied and universally understood.
 
 
 ### Built With
