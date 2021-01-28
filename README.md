@@ -42,8 +42,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This repo contains varied computer programming problems that cover CS Fundamentals, Algorithms, and Advanced Data Structures.
-Generally, the problems and solutions that you will find here are well-studied and universally understood.
+This repo contains various programming problems that cover Algorithms and Advanced Data Structures.
+Generally, the problems and solutions that you will find here are well-studied and can be found in many books.
 
 
 ### Built With
