@@ -42,7 +42,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is a repo containing various programming problems that cover CS Fundamentals, Algorithms, and Advanced Data Structures.
+This repo contains varied computer programming problems that cover CS Fundamentals, Algorithms, and Advanced Data Structures.
 Generally, the problems and solutions that you will find here are well-studied and universally understood.
 
 
