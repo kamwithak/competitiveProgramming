@@ -63,16 +63,16 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://github.com/kamwithak/Speech-Command-Center---Python
-[contributors-url]: https://github.com/kamwithak/Speech-Command-Center---Python
+[contributors-shield]: https://github.com/kamwithak/competitiveProgramming
+[contributors-url]: https://github.com/kamwithak/competitiveProgramming
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/kamwithak/Speech-Command-Center---Python
+[forks-url]: https://github.com/kamwithak/competitiveProgramming
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/kamwithak/Speech-Command-Center---Python
+[stars-url]: https://github.com/kamwithak/competitiveProgramming
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/kamwithak/Speech-Command-Center---Python
+[issues-url]: https://github.com/kamwithak/competitiveProgramming
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/kamwithak/Speech-Command-Center---Python/blob/master/LICENSE
+[license-url]: https://github.com/kamwithak/competitiveProgramming/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/kamranwithak
 [product-screenshot]: https://i.imgur.com/EP1DHUC.gif
