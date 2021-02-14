@@ -1,8 +1,8 @@
 class Solution():
 
-    def __init__(self, needle, haystack):
-        self.needle = needle
+    def __init__(self, haystack, needle):
         self.haystack = haystack
+        self.needle = needle
 
     def needleInHaystackPythonic(self):
         idx = self.haystack.find(self.needle)
@@ -19,22 +19,27 @@ class Solution():
         Space: O(1)
 
         """
-        res, matchFound = [], False
-        H_SIZE, N_SIZE = len(self.haystack), len(self.needle)
+        if (not self.needle or self.needle==self.haystack):
+            return 0
         
-        for ptrH in range(H_SIZE):
-            newH = ptrH
-            newN = 0
+        res = [] ; matchFound = False
+        
+        if (len(self.needle)>len(self.haystack)): return res
+
+        for h in range(len(self.haystack)-len(self.needle)+1):
+            new_h = h
+            new_n = 0
             while (not matchFound):
-                if (self.haystack[newH] != self.needle[newN]):
+                if (self.haystack[new_h] != self.needle[new_n]):
                     break
-                newH += 1
-                newN += 1
-                if (newN == N_SIZE):
-                    res.append(ptrH)
-                    res.append(newH-1)
+                new_h += 1
+                new_n += 1
+                if (new_n == len(self.needle)):
+                    res.append(h)
+                    res.append(h+new_n-1)
                     matchFound = True
+
         return res
       
-obj = Solution('hello','abchellodef')
-print(obj.needleInHaystack())
+obj = Solution('mississippi','issippi')
+print(obj.needleInHaystackCustom())
