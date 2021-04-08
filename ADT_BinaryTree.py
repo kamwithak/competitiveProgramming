@@ -25,25 +25,50 @@ class BSTNode:
         if data < self.key: return self.left.search(data)
         else: return self.right.search(data)
     
-    def minValueNode(self):
+    def minValueNodeIterative(self):
         cur = self
-        while (cur.left is not None):
+        while (cur.left):
             cur = cur.left
-        return cur.key
+        print(cur.key)
 
-    def maxValueNode(self):
+    def minValueNodeRecursive(self, root):
+        if (not root.left):
+            print(root.key)
+        else:
+            self.minValueNodeRecursive(root.left)
+
+    def maxValueNodeIterative(self):
         cur = self
-        while (cur.right is not None):
+        while (cur.right):
             cur = cur.right
-        return cur.key
+        print(cur.key)
+    
+    def maxValueNodeRecursive(self, root):
+        if (not root.right):
+            print(root.key)
+        else:
+            self.maxValueNodeRecursive(root.right)
 
-    def PrintTreeInOrder(self):
-        if self.left:
-            self.left.PrintTree()
-        print(self.key)
-        if self.right:
-            self.right.PrintTree()
+    def PrintTreeInOrder(self, root):
+        if root.left:
+            self.PrintTreeInOrder(root.left)
+        print(root.key)
+        if root.right:
+            self.PrintTreeInOrder(root.right)
 
+    def PrintTreePreOrder(self, root):
+        print(root.key)
+        if (root.left):
+            self.PrintTreePreOrder(root.left)
+        if (root.right):
+            self.PrintTreePreOrder(root.right)
+    
+    def PrintTreePostOrder(self, root):
+        if (root.left):
+            self.PrintTreePreOrder(root.left)
+        if (root.right):
+            self.PrintTreePreOrder(root.right)
+        print(root.key)
 #!
 if __name__ == "__main__":
     root = BSTNode(50)
@@ -54,5 +79,5 @@ if __name__ == "__main__":
     root.insert(60)
     root.insert(80)
     
-    print(root.maxValueNode())
-    #root.PrintTreeInOrder()
+    root.minValueNodeRecursive(root)
+
