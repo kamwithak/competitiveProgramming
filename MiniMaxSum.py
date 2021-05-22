@@ -21,7 +21,6 @@ class MiniMaxSum():
         sum5 = self.arr[ptr1+1]+self.arr[ptr2+1]+self.arr[ptr3+1]+self.arr[ptr4+1]
         return min(sum1,sum2,sum3,sum4, sum5), max(sum1,sum2,sum3,sum4, sum5)
 
-
 obj = MiniMaxSum([1,3,5,7,9])
 
 print(obj.solution())
