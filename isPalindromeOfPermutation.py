@@ -22,7 +22,6 @@ class isPalindromeOfPermutation():
         inputString == 'llllllllllll'       =>                {}
         """
 
-
 obj = isPalindromeOfPermutation('llllllllllll')
 
 print(obj.solution())
