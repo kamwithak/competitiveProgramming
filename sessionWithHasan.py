@@ -94,4 +94,12 @@ def reverse(arr):
 
   return arr
 
-print(reverse([1,2,3,4]))
+
+reversed = []
+def reverse2(arr):
+  for elem in arr:
+    reversed.insert(0, elem)
+  return reversed
+
+
+print(reverse2([1,2,3,4]))
