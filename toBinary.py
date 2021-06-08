@@ -18,5 +18,5 @@ class toBinary:
         return self.binaryArr
 
 obj = toBinary()
-obj.conversionIterative(16)
+obj.conversionRecursive(16)
 print(obj.getBinaryArr())

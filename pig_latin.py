@@ -30,5 +30,3 @@ def toPigLatin(_str: str) -> str:
         return f"{_str[index:]}{_str[:index]}ay"
 
 print(toPigLatin("yello"))
-
-
