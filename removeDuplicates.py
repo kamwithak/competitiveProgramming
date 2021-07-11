@@ -46,5 +46,27 @@ def removeDuplicates2(nums):
       e += 1
   return nums
 
-print(removeDuplicates2([0,0,1,1,1,2,2,3,3,4]))
+print(removeDuplicates2([0,0,1,1,1,2,2,2,3,3]))
 
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        # size = len(nums)
+        # e = 0
+        # for i in range(2, size):
+        #     if (nums[i-2-e] == nums[i-1-e] == nums[i-e]):
+        #         nums.pop(i-2-e)
+        #         e += 1
+        # return len(nums)
+        
+        size = len(nums)
+        
+        i = 2
+        while (i < size):
+            if (nums[i-2] == nums[i-1] == nums[i]):
+                nums.pop(i-2)
+                size -= 1
+            else:
+                i += 1
+    
+        return size
+            
