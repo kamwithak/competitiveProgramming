@@ -11,9 +11,9 @@ class isPalindromeOfPermutation():
             else:
                 _set.remove(char)
 
-        isPalindrome = len(_set) <= 1
-        
-        return isPalindrome
+        _isPalindromeOfPermutation = len(_set) <= 1
+
+        return _isPalindromeOfPermutation
 
 
         """
