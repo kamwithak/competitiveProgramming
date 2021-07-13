@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-class toBinary:
-    def __init__(self, binaryArr=[]):
-        self.binaryArr = binaryArr
-
-    def conversion(self, n):
-        if (n > 0):
-            self.conversion(int(n / 2))
-            self.binaryArr.append(n % 2)
-    
-    def getBinaryArr(self):
-        return self.binaryArr
-
-obj = toBinary()
-obj.conversion(3343)
-=======
 class toBinary:
     def __init__(self, binaryArr=[]):
         self.binaryArr = binaryArr
@@ -35,5 +19,23 @@ class toBinary:
 
 obj = toBinary()
 obj.conversionRecursive(16)
->>>>>>> c87048f6d203a6448ef863b636a9fca7537a1dee
 print(obj.getBinaryArr())
+
+class Solution:
+    
+    def addBinary(self, a: str, b: str) -> str:
+        
+        if (a == b == '0'):
+            return '0'
+        
+        def toBinary(num):
+            arr = []
+            while (num > 0):
+                arr.append(num % 2)
+                num = num // 2
+            return "".join([str(elem) for elem in arr[::-1]])            
+            
+        base10 = int(a, 2) + int(b, 2)
+        
+        return toBinary(base10)
+        
