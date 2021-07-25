@@ -36,9 +36,11 @@ class ComplexListDataStructure():
             self.reverse2()
             self.arr.append(firstElement)
 
+    def getArr(self):
+        return self.arr
 
 if __name__ == '__main__':
     obj = ComplexListDataStructure(arr=[1,2,3,4,5,6,7,8,9,10])
     obj.reverse2()
-    print(obj.arr)
+    print(obj.getArr())
 
