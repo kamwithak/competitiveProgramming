@@ -1,3 +1,5 @@
+import sys
+
 class ComplexListDataStructure():
     
     def __init__(self, arr=[]):
@@ -35,12 +37,45 @@ class ComplexListDataStructure():
             firstElement = self.arr.pop(0)
             self.reverse2()
             self.arr.append(firstElement)
+    
+    def removeMax(self):
+        maxElement = -sys.maxsize
+        maxIndex = -sys.maxsize
+        for index, elem in enumerate(self.arr):
+            if (elem > maxElement):
+                maxElement = elem
+                maxIndex = index
+        self.arr.pop(maxIndex)
+        return maxElement
+
+    def removeMin(self):
+        minElement = sys.maxsize
+        minIndex = sys.maxsize
+        for index, elem in enumerate(self.arr):
+            if (elem < minElement):
+                minElement = elem
+                minIndex = index
+        self.arr.pop(minIndex)
+        return minElement
+            
+    def insertionSort(self, ascending=True):
+        if (len(self.arr) == 1):
+            return self.arr
+        else:
+            if (ascending):
+                maxElement = self.removeMax()
+                self.insertionSort(ascending)
+                self.arr.append(maxElement)
+            else:
+                minElement = self.removeMin()
+                self.insertionSort(ascending)
+                self.arr.append(minElement)
 
     def getArr(self):
         return self.arr
 
 if __name__ == '__main__':
-    obj = ComplexListDataStructure(arr=[1,2,3,4,5,6,7,8,9,10])
-    obj.reverse2()
+    obj = ComplexListDataStructure(arr=[10,8,543,24,234,23,52,2])
+    obj.insertionSort()
     print(obj.getArr())
 
