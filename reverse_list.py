@@ -17,17 +17,12 @@ class ComplexListDataStructure():
             Time: O(n/2) == O(n) where n is self.size
             Space: O(1)
         """
-        
         i = 0
         j = self.size-1
-
         while (i < j):
-
             self.swap(i, j)
-
             i += 1
             j -= 1
-        
         return self.arr
 
     def reverse2(self):
