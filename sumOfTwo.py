@@ -27,7 +27,7 @@ HashSet: Efficient - O(A.size + B.size)
         if (set.contains(elem_j)):
             return True
     
-    return False
+    return False 
 
 
 => v - A = B => v - B = A 
@@ -60,6 +60,6 @@ def _sumOfTwo(A, B, v):
     
     return False
 
-print(_sumOfTwo([1,2,3,4],[6,4,3,2], 3))
+print(_sumOfTwo([1,2,3,4],[6,4,3,2], 11))
 
 
