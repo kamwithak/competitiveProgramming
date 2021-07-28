@@ -1,5 +1,3 @@
-import sys
-
 class FirstNonRepeatingCharacter():
 
     def __init__(self, aString):
