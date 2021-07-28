@@ -27,6 +27,29 @@ class FirstNonRepeatingCharacter():
         
         return self.aString[min(_dict.values())]
 
+
+    def solutionB(self):
+        _dict = {}
+
+        for char in self.aString:
+            if (char not in _dict):
+                _dict[char] = 1
+            else:
+                _dict[char] += 1
+
+        """
+            {a:3,b:1,c:2,d:1,e:3,f:1}
+        """  
+
+        for char in self.aString:
+            if (_dict[char] == 1):
+                return char
+        
+        return None
+          
+
 if __name__ == '__main__':
-    obj = FirstNonRepeatingCharacter('aaabccdeeef')
-    print(obj.solutionA())
+
+    for word in ['aaabccdeeef', 'abcbad', 'asdfghasdfgh']:
+        obj = FirstNonRepeatingCharacter(word)
+        print(obj.solutionA() == obj.solutionB())
