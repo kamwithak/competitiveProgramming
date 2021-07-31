@@ -4,13 +4,10 @@ Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
 def iterative(x, n):
   res = 1
   for i in range(abs(n)):
-      res *= x
-      
-  if (n < 0):
-      return 1 / res
-  
+    res *= x      
+  if (n<0):
+    return 1/res
   return res
-
 
 def recursive(x, n):
   if (n == 0): return 1
