@@ -41,7 +41,7 @@ class FirstNonRepeatingCharacter():
             {a:3,b:1,c:2,d:1,e:3,f:1}
         """  
 
-        for char in self.aString:
+        for char in self.aString
             if (_dict[char] == 1):
                 return char
         

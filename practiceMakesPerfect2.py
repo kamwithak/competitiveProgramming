@@ -14,6 +14,18 @@ class Solution:
             _master.append(aList)    
         return _master
 
-obj = Solution()
-print(obj.generate(3))
-
+class Solution:
+    def minAddToMakeValid(self, s: str) -> int:
+        back, front = 0, 0
+        
+        for c in s:
+            if (c == '('):
+                back += 1
+            elif (c == ')'):
+                back -= 1
+            
+            if (back < 0):
+                back = 0
+                front += 1
+                
+        return back + front

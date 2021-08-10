@@ -27,10 +27,7 @@ def meeting(s):
         arr.append(f'({i[1]}, {i[0]})')
     arr.sort()
 
-    output = ''
-    for j in arr:
-        output += j
-    return output
+    return "".join(arr)
 
 if __name__ == "__main__":
     s = "Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill";

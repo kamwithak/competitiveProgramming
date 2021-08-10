@@ -11,7 +11,7 @@ def giveMeAColor():
 print(giveMeAColor())
 
 
-n = 6
+n = 4
 for i in range(150):
   if ((random.randint(0,255) % n) >= 6):
     print('END - the compression law has been broken')
