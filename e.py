@@ -1,5 +1,5 @@
 '''
-Welcome! :)
+Welcome:)
 
 This is a toy program to print the approximated value of e ~ 2.17828
 

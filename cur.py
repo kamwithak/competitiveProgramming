@@ -18,14 +18,13 @@ def applyPermutationToArray(arr, perm):
     #     masterArr.append(arr[i])
     # return masterArr
 
-    # IN-PLACE:
     hashMapArr, hashMapPerm = {}, {}
-    for i in range(len(perm)):
-        hashMapPerm[i] = perm[i]
+    
     for i in range(len(arr)):
         hashMapArr[i] = arr[i]
     for key in hashMapArr:
-        arr[key] = hashMapArr[hashMapPerm[key]]
+        arr[key] = hashMapArr[perm[key]]
+
     return arr
 
 print(applyPermutationToArray(['a', 'b', 'c'], [2,1,0]))
