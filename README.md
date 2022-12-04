@@ -42,8 +42,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This repo contains programming problems that cover Algorithms and Advanced Data Structures.
-Generally, the problems you will come across here are considered **solved** and can be found in many CS/Algorithm books.
+The problems you will come across here are well known and can be found in many CS/Algorithm books.
 
 
 ### Built With
