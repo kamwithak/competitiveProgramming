@@ -19,7 +19,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -44,7 +43,6 @@
 
 The problems you will come across here are well known and can be found in many CS/Algorithm books.
 
-
 ### Built With
 
 Python
@@ -53,7 +51,7 @@ Python
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See `LICENSE` for more information...
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
